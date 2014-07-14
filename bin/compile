@@ -44,7 +44,7 @@ cp -r $CACHE_PATH/$SODIUM_DIR $BUILD_PATH/vendor/$SODIUM_DIR
 echo "done"
 
 echo -n "-----> Configuring libsodium environment variables... "
-set-env LD_LIBRARY_PATH '$LD_LIBRARY_PATH:$BUILD_PATH/vendor/$SODIUM_DIR/src/libsodium/.libs'
-set-env LIBRARY_PATH '$LIBRARY_PATH:$BUILD_PATH/vendor/$SODIUM_DIR/src/libsodium/.libs'
-set-env C_INCLUDE_PATH '$C_INCLUDE_PATH:$BUILD_PATH/vendor/$SODIUM_DIR/src/libsodium/include/'
+set-env LD_LIBRARY_PATH \$LD_LIBRARY_PATH:$BUILD_PATH/vendor/$SODIUM_DIR/src/libsodium/.libs
+set-env LIBRARY_PATH \$LIBRARY_PATH:$BUILD_PATH/vendor/$SODIUM_DIR/src/libsodium/.libs
+set-env C_INCLUDE_PATH \$C_INCLUDE_PATH:$BUILD_PATH/vendor/$SODIUM_DIR/src/libsodium/include/
 echo "done"
