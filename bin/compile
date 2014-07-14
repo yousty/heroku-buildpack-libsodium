@@ -12,6 +12,8 @@ SODIUM_DIR=libsodium-$VERSION
 TARBALL=$SODIUM_DIR.tar.gz
 TARBALL_URL=https://github.com/jedisct1/libsodium/releases/download/$VERSION/$TARBALL
 
+mkdir -p $(dirname $PROFILE_PATH)
+
 set-env() {
   echo "export $1=$2" >> $PROFILE_PATH
 }
