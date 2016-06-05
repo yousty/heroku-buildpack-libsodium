@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-cat <<EOF
----
-config_vars:
-  LD_LIBRARY_PATH: vendor/libsodium-1.0.2/src/libsodium/.libs
-EOF
