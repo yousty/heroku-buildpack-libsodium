@@ -92,9 +92,3 @@ export CPATH="\$CPATH:${CPATH//$BUILD_DIR//app}"
 EOF
 
 echo "done"
-
-echo -n "-----> Configuring libsodium environment variables... "
-set-env LD_LIBRARY_PATH \$LD_LIBRARY_PATH:/app/vendor/$SODIUM_DIR/src/libsodium/.libs
-set-env LIBRARY_PATH \$LIBRARY_PATH:/app/vendor/$SODIUM_DIR/src/libsodium/.libs
-set-env C_INCLUDE_PATH \$C_INCLUDE_PATH:/app/vendor/$SODIUM_DIR/src/libsodium/include/
-echo "done"
